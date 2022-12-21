@@ -30,11 +30,7 @@
 		inet6 fd4f:4166:3f4a:4059:94ca:f193:709f:99c1  prefixlen 64  scopeid 0x0<global>
 		inet6 fdf8:d160:b0c:1:c721:668d:fdc3:daa1  prefixlen 64  scopeid 0x0<global>
 		inet6 fd4f:4166:3f4a:4059:0:ff:fe00:fc11  prefixlen 64  scopeid 0x0<global>
-		unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
-		RX packets 217712  bytes 30594581 (29.1 MiB)
-		RX errors 0  dropped 1  overruns 0  frame 0
-		TX packets 217775  bytes 11986338 (11.4 MiB)
-		TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
 
 ## Running the gateway
 
