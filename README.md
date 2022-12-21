@@ -2,29 +2,33 @@
 
 ## Build MQTT-SN Gateway
 	
+<<<<<<< HEAD
 ###Clone the git repo and checkout the updatedgateway branch.
+=======
+Clone the git repo and checkout the updatedgateway branch.
+>>>>>>> b8040a2c23c64057edfa281944c11dd0d9c40493
 		
 		git clone https://github.com/nikhilkomalan/paho.mqtt-sn.embedded-c.git
 		cd paho.mqtt-sn.embedded-c
 		git checkout updatedgateway
 
-###Now move to MQTTSNGateway folder and build the gateway for UDP6 by executing the following command.
+Now move to MQTTSNGateway folder and build the gateway for UDP6 by executing the following command.
 
 		cd MQTTSNGateway
 		./build.sh udp6
 
-	- On successfull build, bin folder will be created with the genrated executable files. 	
+On successfull build, bin folder will be created with the genrated executable files. 	
 
 ## MQTT-SN Gateway Configuration
 
-###Modify the BrokerName (i.e IP addr. of mosquitto server) in the "gateway.conf" file present in MQTTSNGateway/bin directory. 
+Modify the BrokerName (i.e IP addr. of mosquitto server) in the "gateway.conf" file present in MQTTSNGateway/bin directory. 
 	
 		BrokerName=103.238.13.202 	//Broker address
 		BrokerPortNo=1883
 		BrokerSecurePortNo=8883
 
 		
-###To make it compatible with nRF5 SDK example, you have to change UDPv6 Broadcast Address in the "gateway.conf" file present in MQTTSNGateway/bin directory. 
+To make it compatible with nRF5 SDK example, you have to change UDPv6 Broadcast Address in the "gateway.conf" file present in MQTTSNGateway/bin directory. 
 
 		GatewayUDP6Bind=FFFF:FFFE::1 
 		GatewayUDP6Port=47193		//Nordic example udp port
@@ -32,7 +36,7 @@
 		GatewayUDP6If=wpan0
 		GatewayUDP6Hops=5		
 		
-		- Below is the wpan0 interface of my RCP device connected to OTBR (use as reference for setting GatewayUDP6Broadcast
+Below is the wpan0 interface of my RCP device connected to OTBR (use as reference for setting GatewayUDP6Broadcast
 		in above step): 
 		
 		wpan0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1280
@@ -48,7 +52,7 @@
 
 ## Running the gateway
 
-###Run the pre-build gateway present in MQTTSNGateway/bin directory, by executing the "./MQTT-SNGateway" in command line it will use the gateway.conf file as configuration file by default.
+Run the pre-build gateway present in MQTTSNGateway/bin directory, by executing the "./MQTT-SNGateway" in command line it will use the gateway.conf file as configuration file by default.
 
 
 		cd /paho.mqtt-sn.embedded-c/MQTTSNGateway/bin
