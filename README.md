@@ -3,7 +3,6 @@
 ## Build MQTT-SN Gateway
 	
 Clone the git repo and checkout the updatedgateway branch.
->>>>>>> b8040a2c23c64057edfa281944c11dd0d9c40493
 		
 		git clone https://github.com/nikhilkomalan/paho.mqtt-sn.embedded-c.git
 		cd paho.mqtt-sn.embedded-c
