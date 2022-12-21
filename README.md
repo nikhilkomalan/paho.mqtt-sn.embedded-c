@@ -1,5 +1,19 @@
-# Running the MQTT-SN Gateway 
+# Build and run the MQTT-SN Gateway 
 
+## Build MQTT-SN Gateway
+	
+	- Clone the git repo and checkout the updatedgateway branch.
+		
+		git clone https://github.com/nikhilkomalan/paho.mqtt-sn.embedded-c.git
+		cd paho.mqtt-sn.embedded-c
+		git checkout updatedgateway
+
+	- Now move to MQTTSNGateway folder and build the gateway for UDP6 by executing the following command.
+
+		cd MQTTSNGateway
+		./build.sh udp6
+
+	- On successfull build, bin folder will be created with the genrated executable files. 	
 
 ## MQTT-SN Gateway Configuration
 
@@ -36,3 +50,6 @@
 
 	- Run the pre-build gateway present in MQTTSNGateway/bin directory, by executing the "./MQTT-SNGateway" in command line it will use the gateway.conf file as configuration file by default.
 
+
+		cd /paho.mqtt-sn.embedded-c/MQTTSNGateway/bin
+		./MQTT-SNGateway
