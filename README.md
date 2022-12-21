@@ -2,9 +2,6 @@
 
 ## Build MQTT-SN Gateway
 	
-<<<<<<< HEAD
-###Clone the git repo and checkout the updatedgateway branch.
-=======
 Clone the git repo and checkout the updatedgateway branch.
 >>>>>>> b8040a2c23c64057edfa281944c11dd0d9c40493
 		
